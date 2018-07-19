@@ -17,7 +17,7 @@
 
 
         <!--Navbar/menu-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-3">
+        <nav id="navibarPortfolio" class="navbar navbar-expand-lg navbar-dark bg-primary shadow p-3">
             <!--O elemento "#" representa "caminho nenhum"-->
             <a class="navbar-brand" href="#">
                 <img src="assets/brand/cloud.svg" width="10%" alt="Cloud Icon">
@@ -27,10 +27,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <section class="collapse navbar-collapse" id="navibarPortfolio">
+            <section class="collapse navbar-collapse dropleft" id="navibarPortfolio">
                 <!--Alinhamento, poderia ser: ml-left/ml-right-->
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                            <div class="dropdown-menu">
+                              <p class="dropdown-item">Cel: (11) 94824-8656</p>
+                              <p class="dropdown-item">E-mail: matthauszigillig@hotmail.com</p>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="https://github.com/MatthausZillig/-official-responsive-site-portfolio">See this portfolio in Github!</a>
+                            </div>
+
+                    </li>
                     <li class="nav-item">
 
                         <a class="nav-link" href="#">About</a>
@@ -41,12 +51,6 @@
                         <a class="nav-link" href="https://github.com/MatthausZillig" target="_blank">Portfolio</a>
 
                     </li>
-                    <li class="nav-intem">
-
-                        <a class="nav-link" href="#">Contact</a>
-
-                    </li>
-
                 </ul>
 
             </section>
@@ -87,7 +91,7 @@
 
 
 
-        <!--Main container-->
+    <!--Main container-->
     <main class="containerPortfolio container my-5">
 
         <!--Feature-Work-->
@@ -95,7 +99,7 @@
             <!--Cards-->
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card rounded-0 shadow-sm">
-                    <img class="card-img-top" src="assets/animal-trading-cards.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="assets/animal-trading-cards.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                            <h5 class="card-title">Animal Trading Cards</h5>
                            <p class="card-text">This was my first project, I learned a lot about HTML and CSS. It's a collectible card from my favorite animal.</p>
@@ -105,7 +109,7 @@
             </div>
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card rounded-0 shadow-sm">
-                    <img class="card-img-top" src="assets/responsive-portfolio.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="assets/responsive-portfolio.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                            <h5 class="card-title">Responsive Portfolio</h5>
                            <p class="card-text">Fully responsive portfolio web page, with grid-based design, using the Bootstrap framework with JavaScript and jquery.</p>
@@ -115,7 +119,7 @@
             </div>
             <div class="col-sm-12 col-md-4 mb-4">
                 <div class="card rounded-0 shadow-sm">
-                    <img class="card-img-top" src="assets/memory-game.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="assets/memory-game.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                            <h5 class="card-title">Memory Game</h5>
                            <p class="card-text">My own version of the classic memory game, made with JavaScript, DOM selectors and Event Listeners.</p>
@@ -125,7 +129,7 @@
             </div>
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card rounded-0 shadow-sm">
-                    <img class="card-img-top" src="assets/animal-trading-cards.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="assets/animal-trading-cards.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                            <h5 class="card-title">Animal Trading Cards</h5>
                            <p class="card-text">This was my first project, I learned a lot about HTML and CSS. It's a collectible card from my favorite animal.</p>
@@ -135,7 +139,7 @@
             </div>
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card rounded-0 shadow-sm">
-                    <img class="card-img-top" src="assets/responsive-portfolio.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="assets/responsive-portfolio.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                            <h5 class="card-title">Responsive Portfolio</h5>
                            <p class="card-text">Fully responsive portfolio web page, with grid-based design, using the Bootstrap framework with JavaScript and jquery.</p>
@@ -145,7 +149,7 @@
             </div>
             <div class="col-sm-12 col-md-4 mb-4">
                 <div class="card rounded-0 shadow-sm">
-                    <img class="card-img-top" src="assets/memory-game.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="assets/memory-game.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                            <h5 class="card-title">Memory Game</h5>
                            <p class="card-text">My own version of the classic memory game, made with JavaScript, DOM selectors and Event Listeners.</p>
@@ -155,6 +159,7 @@
             </div>
 
         </section>
+
 
     </main>
 
@@ -174,15 +179,33 @@
             </div>
         </section>
 
+    <!--Hire-me container-->
+    <section id="hireMeContainer" class="container mt-5">
+
+        <section class="row mt-4">
+
+            <div class="col-md-6">
+                <img class="img-fluid" width="80%" src="assets/celular.svg" alt="desenho de uma mão segurando celualar">
+            </div>
+            <div class="col-md-6 text-center">
+                <p class="display-4 align-middle">Hire me, I want to learn more and more with you.</p>
+                <p class="display-4 align-middle">I really like challenges and web development!</p>
+                <a class="btn btn-outline-secondary btn-lg btn-block my-4 " href="/assets/downloads/curriculum-vitae.pdf" download="Resume" role="button">take my <strong>Resume</strong></a>
+            </div>
+
+        </section>
+
+    </section>
+
 
 
 
 
 
         <!--Jumbotron-Footer-->
-        <footer id="footerPortfolio" class="row">
+        <footer id="footerPortfolio" class="row mt-0">
 
-            <div class="jumbotron col-md-12 text-white text-center rounded-0 bg-primary shadow-lg">
+            <div class="jumbotron col-md-12 text-white text-center rounded-0 bg-danger shadow-lg">
                 <a href="https://www.facebook.com/suahttam.zillig" target="_blank"><div data-icon="ei-sc-facebook" data-size="m"></div></a>
                 <a href="https://github.com/MatthausZillig" target="_blank"><div data-icon="ei-sc-github" data-size="m"></div></a>
                 <a href="https://www.linkedin.com/in/matthaus-zillig-160876b5/" target="_blank"><div data-icon="ei-sc-linkedin" data-size="m"></div></a>
@@ -205,11 +228,9 @@
     <!-- Optional JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     </body>
 </html>
